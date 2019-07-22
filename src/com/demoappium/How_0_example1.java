@@ -13,15 +13,19 @@ public class How_0_example1 {
 	
 	@Test
 	public void setUp() throws MalformedURLException {
+		
+		
 		DesiredCapabilities cap=new DesiredCapabilities();
 		
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus4");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus");
 		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.0");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-		cap.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
+		cap.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome"); 
 		
 		URL url=new URL("http://127.0.0.1:4723/wd/hub");
-		AndroidDriver<AndroidElement>  driver=new AndroidDriver<AndroidElement>(url, cap);
+		
+		AndroidDriver<AndroidElement>  driver=new AndroidDriver<AndroidElement> (url, cap);
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.facebook.com");
 
