@@ -17,9 +17,9 @@ public class How_0_example1 {
 		
 		DesiredCapabilities cap=new DesiredCapabilities();
 		
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus");
-		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.0");
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
+		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.0");
 		cap.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome"); 
 		
 		URL url=new URL("http://127.0.0.1:4723/wd/hub");
@@ -27,7 +27,7 @@ public class How_0_example1 {
 		AndroidDriver<AndroidElement>  driver=new AndroidDriver<AndroidElement> (url, cap);
 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("http://www.facebook.com");
+		driver.get("https://www.facebook.com");
 
 	}
 

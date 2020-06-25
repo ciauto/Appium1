@@ -17,8 +17,7 @@ public class How_2_Invoke_MobileChromeBrowser {
 		DesiredCapabilities cap = new DesiredCapabilities();
 
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.ANDROID);
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "GalaxyNexus");
-		// cap.setCapability(MobileCapabilityType.p, "Android Emulator");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
 		cap.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(url, cap);

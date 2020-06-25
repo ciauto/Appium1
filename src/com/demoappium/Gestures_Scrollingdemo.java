@@ -13,6 +13,7 @@ public class Gestures_Scrollingdemo extends Baseclass{
 	     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	     driver.findElementByXPath("//android.widget.TextView[@text='Views']").click();
 	     driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView\"));");
-	     }
+	     driver.quit();
+	}
 
 }

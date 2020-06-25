@@ -18,7 +18,7 @@ public class How_1_InvokeApp {
 		
 		
 		DesiredCapabilities cap=new DesiredCapabilities();
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Nexus4");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Naresh");
 		cap.setCapability(MobileCapabilityType.APP, fs.getAbsolutePath());
 		
 		AndroidDriver<AndroidElement> driver=new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);

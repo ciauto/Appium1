@@ -29,5 +29,6 @@ public class Gestures_longPress extends Baseclass {
 		WebElement ppln=driver.findElementByAndroidUIAutomator("text(\"People Names\")");
 		t.longPress(longPressOptions().withElement(element(ppln)).withDuration(ofSeconds(2))).release().perform();
 		System.out.println(driver.findElementById("android:id/title").getText());
+		driver.quit();
 	}
 }

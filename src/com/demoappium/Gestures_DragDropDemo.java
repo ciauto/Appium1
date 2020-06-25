@@ -17,7 +17,7 @@ public class Gestures_DragDropDemo extends Baseclass{
 	public static void main(String[] args) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
 		//Runtime.getRuntime().exec("cmd /c start c:\\startappium.bat");
-		Runtime.getRuntime().exec("cmd.exe /c start cmd.exe /k \"appium -a 127.0.0.1 -p 4723\"");
+		//Runtime.getRuntime().exec("cmd.exe /c start cmd.exe /k \"appium -a 127.0.0.1 -p 4723\"");
 	
 		Thread.sleep(8000);
 		AndroidDriver<AndroidElement> driver=Capabilitiesmethod();
@@ -28,6 +28,7 @@ public class Gestures_DragDropDemo extends Baseclass{
 	     WebElement source=driver.findElementsByClassName("android.view.View").get(0);
 	     WebElement destination=driver.findElementsByClassName("android.view.View").get(1);
 	     t.longPress(longPressOptions().withElement(element(source))).moveTo(element(destination)).release().perform();
-	     	}
+	     driver.quit();	
+	}
 
 }

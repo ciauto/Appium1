@@ -28,6 +28,6 @@ public class Gestures_Swipe extends Baseclass {
 	WebElement second=driver.findElementByXPath("//*[@content-desc='45']");
 	//long press on first element then 2 second hold move to 2nd element and then you release 
 	t.longPress(longPressOptions().withElement(element(first)).withDuration(Duration.ofSeconds(2))).moveTo(element(second)).release().perform();
-	
+	driver.quit();
 	}
 }

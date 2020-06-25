@@ -24,5 +24,6 @@ public class Gestures_Tap extends Baseclass {
 		driver.findElementByXPath("//android.widget.TextView[@text='1. Custom Adapter']").click();
 		String str = driver.findElementByXPath("//android.widget.TextView[@text='Fish Names']").getText();
 		System.out.println(str);
+		driver.quit();
 	}
 }
