@@ -15,6 +15,7 @@ public class How_3_findLocator extends Baseclass {
 		
 		//find element using xpath
 		// syntax for xpath   //tagName[@attribute='value']
+		
 		driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
 		
 		//find element using xpath

@@ -18,8 +18,11 @@ public class How_0_example1 {
 		DesiredCapabilities cap=new DesiredCapabilities();
 		
 		cap.setCapability(MobileCapabilityType.PLATFORM_NAME,"Android");
-		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel");
-		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "7.0");
+		cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Pixel3");
+		cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11.0");
+		cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+		
+		
 		cap.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome"); 
 		
 		URL url=new URL("http://127.0.0.1:4723/wd/hub");
